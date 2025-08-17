@@ -12,7 +12,7 @@ func main() {
 
 	fmt.Print("Primer numero: ")
 	fmt.Scanln(&primernumero)
-	fmt.Print("Operacion(+, *, /): ")
+	fmt.Print("Operacion(+, *, /, -): ")
 	fmt.Scanln(&operacion)
 	fmt.Print("Segundo numero: ")
 	fmt.Scanln(&segundonumero)
@@ -21,6 +21,8 @@ func main() {
 		resultado = primernumero + segundonumero
 	} else if operacion == "*" {
 		resultado = primernumero * segundonumero
+	} else if operacion == "-" {
+		resultado = primernumero - segundonumero
 	} else if operacion == "/" {
 		// importante validar que no se divida entre 0
 		if segundonumero == 0 {
